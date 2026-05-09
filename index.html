@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page that shows my complete academic pursuit as an online course">
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <title>WDD 231 - Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Site Logo" width="50" height="50">
+            <span>My Personal Academic Information</span>
+        </div>
+
+        <button id="menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="top-section">
+
+            <section class="card about">
+                <h2>About Me</h2>
+                <p>
+                <p>
+                    My name is Your Uzoka Shadrack Chinedu, and I am currently studying Web and Computer Programming.
+                    I am passionate about technology, web development, and creating responsive and
+                    user-friendly websites. I enjoy learning how HTML, CSS, and JavaScript work together
+                    to build modern web applications. <br><br>
+
+                    I am continuously improving my skills in frontend development, responsive design,
+                    accessibility, and user experience. My goal is to become a professional software
+                    developer capable of building functional and visually appealing digital solutions. <br><br>
+
+                    Outside academics, I enjoy researching technology trends, solving programming
+                    challenges, and working on personal projects that strengthen my problem-solving
+                    abilities and creativity.
+                </p>
+                </p>
+            </section>
+
+            <section class="card photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Student Photo">
+            </section>
+
+        </div>
+
+        <section class="courses-section">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p id="credits"></p>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="socials">
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span> Uzoka Shadrack Chinedu • Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

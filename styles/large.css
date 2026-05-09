@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    #menu {
+        display: none;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .navigation {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation li a {
+        border: none;
+        text-align: center;
+    }
+
+    /* =========================
+       TOP SECTION
+    ========================= */
+
+    .top-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .photo img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* =========================
+       COURSES
+    ========================= */
+
+    #course-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .course-card {
+        font-size: 1.1rem;
+    }
+}
