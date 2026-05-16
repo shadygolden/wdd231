@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asaba Chamber of Commerce Directory</title>
+
+    <meta name="description" content="Asaba Chamber of Commerce Directory Page done by shadrack as a class work">
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="Asaba Chamber of Commerce">
+    <meta property="og:description" content="Business directory for Asaba Chamber of Commerce">
+    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:url" content="https://shadygolden.github.io/wdd231/chamber/directory.html">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo">
+
+            <div>
+                <h2>Asaba Chamber</h2>
+                <p>of Commerce</p>
+            </div>
+        </div>
+
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <img class="hero" src="images/hero.webp" alt="hero image">
+
+    <section class="section1">
+        <h1>Home</h1>
+        <div class="maindiv">
+            <div>
+                <h2>Events</h2>
+                <p><br><br><br><br><br><br><br></p>
+            </div>
+            <div class="divflex">
+                <h2>Current Weather</h2>
+                <div>
+                    <img src="images/sun-icon.svg" alt="Sunny Weather Icon" width="64" height="64">
+
+                    <p><b>75°</b> F <br>Partly Cloudy <br> High: 85° <br> Low: 52° <br> Humidity: 34% <br> Sunrise:
+                        7:30am
+                        <br> Sunset: 9:59pm
+                    </p>
+                </div>
+
+            </div>
+            <div class="divspacing">
+                <h2>Weather Forecast</h2>
+                <p>Today: <b>90°F</b> <br>Wednesday: <b>89°F</b> <br>Thursday: <b>68°F</b></p>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+
+        <h1>Business Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <section id="members" class="grid-view"></section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+            <h3>Asaba Chamber of Commerce</h3>
+
+            <p>Asaba, Delta State, Nigeria</p>
+            <p>info@asabachamber.org</p>
+            <p>+234 8140075114</p>
+        </div>
+
+        <div class="socials">
+
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/xmedia.svg" alt="X">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+        </div>
+
+        <div class="footer-info">
+            <p>
+                WDD231 Class Project <br>
+                Uzoka Shadrack Chinedu <br>
+                &copy; <span id="currentyear"></span> Asaba Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
