@@ -212,10 +212,12 @@ footer {
     flex-direction: column;
 }
 
-.maindiv h3 {
+.p1 {
     background-color: #1f1f1f;
     color: #ffffff;
     padding: 10px;
+    line-height: normal;
+    font-weight: bold;
 }
 
 .maindiv div {
