@@ -177,11 +177,6 @@ footer {
     gap: 1rem;
 }
 
-.socials {
-    display: flex;
-    gap: 1rem;
-}
-
 .socials a {
     color: white;
     text-decoration: none;
