@@ -27,9 +27,76 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
     }
+
     .maindiv {
-    display: flex;
-    justify-content: space-evenly;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
- 
+
+@media screen and (min-width: 768px) {
+
+    #menu  {
+        display: none;
+    }
+    
+    #searchLabel {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        border: none;
+        border-radius: 6px;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .home-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .spotlight-content {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    .spotlight-image img {
+        max-width: 150px;
+        height: auto;
+        margin-right: 1.5rem;
+        border-radius: 4px;
+    }
+
+    .spotlight-info {
+        flex: 1;
+    }
+
+
 }

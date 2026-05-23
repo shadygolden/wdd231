@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Asaba Tech Hub",
+    "address": "12 Summit Road, Asaba",
+    "phone": "+2348000000001",
+    "website": "https://asabatechhub.com",
+    "image": "business1.webp",
+    "membership": 3
+  },
+  {
+    "name": "Delta Foods Ltd",
+    "address": "45 Nnebisi Road, Asaba",
+    "phone": "+2348000000002",
+    "website": "https://deltafoods.com",
+    "image": "business2.webp",
+    "membership": 2
+  },
+  {
+    "name": "Royal Hotels",
+    "address": "8 DBS Road, Asaba",
+    "phone": "+2348000000003",
+    "website": "https://royalhotels.com",
+    "image": "business3.webp",
+    "membership": 3
+  }
+]
