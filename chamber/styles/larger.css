@@ -1,41 +1,11 @@
 @media screen and (min-width: 768px) {
-
-    #menu {
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        background-color: var(--primary);
-    }
-
-    .navigation li {
-        flex: 1;
-    }
-
-    .navigation li a {
-        border: none;
-        text-align: center;
-    }
-
-    .grid-view {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-    }
-
     .maindiv {
         display: flex;
         justify-content: space-evenly;
     }
-
-}
-
-@media screen and (min-width: 768px) {
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     #menu  {
         display: none;

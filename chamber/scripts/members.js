@@ -1,59 +1,40 @@
-const url = 'data/members.json';
+const spotlightContainer = document.querySelector('#spotlight-container');
 
-const cards = document.querySelector('#members');
-
-async function getMembers() {
-
-    const response = await fetch(url);
-
+async function getSpotlights() {
+    const response = await fetch('data/members.json'); // now using members.json
     const data = await response.json();
 
-    displayMembers(data.members);
+    // filter only Gold and Silver members
+    const filtered = data.members.filter(member => 
+        member.membership === "Gold" || member.membership === "Silver"
+    );
+
+    displaySpotlights(filtered);
 }
 
-getMembers();
-
-function displayMembers(members) {
-
+function displaySpotlights(members) {
     members.forEach(member => {
-
-        const card = document.createElement('section');
-
-        card.classList.add('member-card');
+        const card = document.createElement('div');
+        card.classList.add('spotlight-card');
 
         card.innerHTML = `
-            <h2>${member.name}</h2>
-
-            <img src="images/${member.image}" alt="${member.name}">
-
-            <p><strong>Address:</strong> ${member.address}</p>
-
-            <p><strong>Phone:</strong> ${member.phone}</p>
-
-            <p>
-                <a href="${member.website}" target="_blank">
-                    Visit Website
-                </a>
-            </p>
-
-            <p><strong>Membership:</strong> ${member.membership}</p>
+            <h3 class="business-name">${member.name}</h3>
+            <hr>
+            <div class="spotlight-content">
+                <div class="spotlight-image">
+                    <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+                </div>
+                <div class="spotlight-info">
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">Visit Website</a>
+                </div>
+            </div>
         `;
 
-        cards.appendChild(card);
+        spotlightContainer.appendChild(card);
     });
 }
 
-/* GRID & LIST TOGGLE */
-
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
-
-gridButton.addEventListener('click', () => {
-    cards.classList.add('grid-view');
-    cards.classList.remove('list-view');
-});
-
-listButton.addEventListener('click', () => {
-    cards.classList.add('list-view');
-    cards.classList.remove('grid-view');
-});
+// run the function
+getSpotlights();
