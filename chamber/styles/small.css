@@ -246,7 +246,7 @@ footer {
     padding: 1rem;
 }
 
-.form-section,
+.form,
 .membership-card,
 dialog {
     background: #ffffff;
@@ -315,6 +315,13 @@ select {
 .membership-card:nth-child(4) {
     animation-delay: 0.8s;
 }
+
+.myh2{
+        text-align: center;
+        margin-bottom: 20px;
+        color: #222;
+        font-style: italic;
+    }
 
 
 @keyframes fadeIn {
