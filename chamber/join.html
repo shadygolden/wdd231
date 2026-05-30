@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asaba Chamber of Commerce</title>
+
+    <meta name="description" content="Asaba Chamber of Commerce supporting businesses and economic growth.">
+
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <meta property="og:title" content="Asaba Chamber of Commerce Business Network">
+    <meta property="og:description"
+        content="Discover business opportunities, local events, networking, and economic growth through the Asaba Chamber of Commerce Community.">
+    <meta property="og:image" content="https://shadygolden.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://shadygolden.github.io/wdd231/chamber/">
+
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="logo-box">
+                <img src="images/logo.webp" alt="Chamber Logo" width="50" height="50">
+                <span>Asaba Chamber of Commerce</span>
+            </div>
+
+            <button id="menu" aria-labelledby="searchLabel"></button>
+            <span id="searchLabel">Search</span>
+
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="join-main">
+        <h1 id="joinh1">Join the Chamber</h1>
+
+        <section class="form-section">
+            <h2 class="myh2">Membership Application Form</h2>
+            
+
+            <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name
+                    <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                        required>
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="organizationtitle" title="Enter your organization title"
+                        autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}" required>
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" title="Enter your mobile number" autocomplete="tel" required>
+                </label>
+
+                <label>
+                    Business/Organization Name
+                    <input type="text" name="organization" title="Enter your organization name"
+                        autocomplete="organization" required>
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+
+                        <option value="">Select Membership</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+
+                    </select>
+                </label>
+
+                <label>
+                    Organization Description
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Apply for Membership" class="submit-btn">
+
+            </form>
+
+        </section>
+
+        <section class="membership-cards">
+            <h2 class="myh2">Membership Levels</h2>
+
+            <div class="membership-card bronze">
+                <h2>Bronze Membership</h2>
+                <a href="#" onclick="document.getElementById('bronzeModal').showModal()">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="membership-card silver">
+                <h2>Silver Membership</h2>
+                <a href="#" onclick="document.getElementById('silverModal').showModal()">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="membership-card gold">
+                <h2>Gold Membership</h2>
+                <a href="#" onclick="document.getElementById('goldModal').showModal()">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="membership-card np">
+                <h2>NP Membership</h2>
+                <a href="#" onclick="document.getElementById('npModal').showModal()">
+                    Learn More
+                </a>
+            </div>
+
+        </section>
+
+
+    </main>
+    <dialog id="bronzeModal">
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+            <li>Business listing</li>
+            <li>Community networking</li>
+            <li>Monthly newsletters</li>
+        </ul>
+
+        
+        <button onclick="document.getElementById('bronzeModal').close()">
+            Close
+        </button>
+    
+
+    </dialog>
+
+    <dialog id="silverModal">
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+            <li>Everything in Bronze</li>
+            <li>Training workshops</li>
+            <li>Event discounts</li>
+        </ul>
+
+        
+        <button onclick="document.getElementById('silverModal').close()">
+            Close
+        </button>
+        
+
+    </dialog>
+
+    <dialog id="goldModal">
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+            <li>Everything in Silver</li>
+            <li>Homepage spotlight advertising</li>
+            <li>Premium event sponsorship</li>
+        </ul>
+
+        
+        <button onclick="document.getElementById('goldModal').close()">
+            Close
+        </button>
+        
+
+    </dialog>
+
+    <dialog id="npModal">
+        <h2>NP Membership Benefits</h2>
+        <ul>
+            <li>Free membership</li>
+            <li>Community event access</li>
+            <li>Local partnership opportunities</li>
+        </ul>
+
+        
+        <button onclick="document.getElementById('npModal').close()">
+            Close
+        </button>
+        
+
+    </dialog>
+
+    <footer>
+
+        <div>
+            <h3>Asaba Chamber of Commerce</h3>
+            <p>123 Nnebisi Road</p>
+            <p>Asaba, Delta State</p>
+            <p>info@asabacc.org</p>
+            <p>+234 800 000 0000</p>
+        </div>
+
+        <div class="socials">
+
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube icon">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/xmedia.svg" alt="Xsocial icon">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+
+        </div>
+
+        <div>
+            <p>
+                WDD231 Project <br>
+                Uzoka Shadrack Chinedu <br>
+                &copy; <span id="currentyear"></span> Asaba Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
