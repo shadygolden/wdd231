@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Asaba Chamber of Commerce</title>
+
+    <meta name="description" content="Asaba Chamber of Commerce supporting businesses and economic growth.">
+
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <meta property="og:title" content="Asaba Chamber of Commerce Business Network">
+    <meta property="og:description"
+        content="Discover business opportunities, local events, networking, and economic growth through the Asaba Chamber of Commerce Community.">
+    <meta property="og:image" content="https://shadygolden.github.io/wdd231/chamber/images/hero.webp">
+    <meta property="og:url" content="https://shadygolden.github.io/wdd231/chamber/">
+
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-bar">
+
+            <div class="logo-box">
+                <img src="images/logo.webp" alt="Chamber Logo" width="50" height="50">
+                <span>Asaba Chamber of Commerce</span>
+            </div>
+
+            <button id="menu" aria-labelledby="searchLabel"></button>
+            <span id="searchLabel">Search</span>
+
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Discover Asaba</h1>
+
+        <section id="visit-message"></section>
+
+        <section class="discover-grid" id="discoverCards"></section>
+    </main>
+
+    <footer>
+
+        <div>
+            <h3>Asaba Chamber of Commerce</h3>
+            <p>123 Nnebisi Road</p>
+            <p>Asaba, Delta State</p>
+            <p>info@asabacc.org</p>
+            <p>+234 800 000 0000</p>
+        </div>
+
+        <div class="socials">
+
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube icon">
+            </a>
+
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/xmedia.svg" alt="Xsocial icon">
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn icon">
+            </a>
+
+        </div>
+
+        <div>
+            <p>
+                WDD231 Project <br>
+                Uzoka Shadrack Chinedu <br>
+                &copy; <span id="currentyear"></span> Asaba Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
