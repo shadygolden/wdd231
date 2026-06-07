@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigerian Food & Recipe Hub | Nutrition</title>
+
+    <meta name="description"
+        content="Learn about the nutritional benefits of Nigerian foods, healthy eating tips, and balanced diet guides.">
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <meta property="og:title" content="Nutrition - Nigerian Food Hub">
+    <meta property="og:description" content="Discover the health benefits of Nigerian foods and balanced diet tips.">
+    <meta property="og:image" content="images/hero.webp">
+
+    <link rel="icon" href="images/favicon.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="scripts/nutrition.js"></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <div class="logo-container">
+                <img src="images/logo.webp" alt="Nigerian Food Hub Logo" width="50">
+                <span>Nigerian Food Hub</span>
+            </div>
+
+            <button id="menuBtn">☰</button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/hero.jpeg" alt="Healthy Nigerian food" loading="eager">
+
+            <div class="hero-content">
+                <h1>Nutrition & Healthy Eating</h1>
+                <p>Discover the health benefits of traditional Nigerian meals.</p>
+            </div>
+        </section>
+
+        <!-- FOOD BENEFITS -->
+        <section>
+
+            <h2>Nutritional Benefits of Nigerian Foods</h2>
+
+            <div class="tips-grid">
+
+                <article>
+                    <h3>Beans</h3>
+                    <p>High in protein and fiber, helps muscle growth and digestion.</p>
+                </article>
+
+                <article>
+                    <h3>Yam</h3>
+                    <p>Provides energy-rich carbohydrates for daily activities.</p>
+                </article>
+
+                <article>
+                    <h3>Fish</h3>
+                    <p>Rich in omega-3 fatty acids for brain and heart health.</p>
+                </article>
+
+                <article>
+                    <h3>Vegetables</h3>
+                    <p>Boost immunity and provide essential vitamins.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- HEALTHY EATING TIPS -->
+        <section>
+
+            <h2>Healthy Eating Tips</h2>
+
+            <ul>
+                <li>Eat a balanced diet with protein, carbs, and vegetables.</li>
+                <li>Reduce excessive oil in cooking.</li>
+                <li>Drink enough water daily.</li>
+                <li>Include fresh fruits regularly.</li>
+                <li>Avoid excessive processed foods.</li>
+            </ul>
+
+        </section>
+
+        <!-- INTERACTIVE CALCULATOR (JS READY) -->
+        <section>
+
+            <h2>Quick Nutrition Checker</h2>
+
+            <p>Select a food to view its benefits:</p>
+
+            <select id="foodSelect">
+                <option value="">-- Select Food --</option>
+                <option value="beans">Beans</option>
+                <option value="yam">Yam</option>
+                <option value="fish">Fish</option>
+                <option value="rice">Rice</option>
+            </select>
+
+            <div id="nutritionResult"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <p>
+                WDD231 Project <br>
+                Uzoka Shadrack Chinedu <br>
+                &copy; <span id="currentyear"></span> Asaba Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+        <p><a href="attributions.html">Attributions</a></p>
+
+        <p><a href="https://youtube.com/" target="_blank" rel="noopener">Project Video</a></p>
+
+    </footer>
+
+    <script type="module" src="js/nutrition.js"></script>
+
+</body>
+
+</html>

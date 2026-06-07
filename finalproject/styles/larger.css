@@ -1,0 +1,67 @@
+
+@media screen and (min-width: 768px) {
+    /* =======================
+   NAVIGATION (DESKTOP)
+======================= */
+
+    #menuBtn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        gap: 1rem;
+        background: none;
+    }
+
+    /* =======================
+   HERO LAYOUT
+======================= */
+    .hero-content {
+        max-width: 400px;
+    }
+
+    /* =======================
+   RECIPE GRID
+======================= */
+
+    .recipe-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .recipe-card {
+        margin: 0;
+    }
+
+    /* =======================
+   NUTRITION GRID
+======================= */
+
+    .tips-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    /* =======================
+   FEATURED LAYOUT
+======================= */
+
+    .featured-card {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .featured-card img {
+        width: 50%;
+    }
+
+}
+
+

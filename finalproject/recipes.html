@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigerian Food & Recipe Hub | Recipes</title>
+
+    <meta name="description"
+        content="Browse authentic Nigerian recipes including Jollof Rice, Egusi Soup, Suya, and more. Learn cooking instructions and ingredients.">
+    <meta name="author" content="Uzoka Shadrack Chinedu">
+
+    <meta property="og:title" content="Nigerian Recipes">
+    <meta property="og:description" content="Explore 15+ Nigerian dishes with ingredients and cooking steps.">
+    <meta property="og:image" content="images/hero.webp">
+
+    <link rel="icon" href="images/favicon.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto&family=Roboto+Mono:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+
+    <script type="module" src="scripts/recipes.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/main.js"></script>
+
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <div class="logo-container">
+                <img src="images/logo.webp" alt="Logo" width="50">
+                <span>Nigerian Food Hub</span>
+            </div>
+
+            <button id="menuBtn">☰</button>
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SEARCH + FILTER -->
+        <section class="controls">
+
+            <h1>Explore Nigerian Recipes</h1>
+
+            <input type="search" id="searchInput" placeholder="Search recipes...">
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="rice">Rice</option>
+                <option value="soup">Soup</option>
+                <option value="snack">Snacks</option>
+                <option value="drink">Drinks</option>
+            </select>
+
+        </section>
+
+        <!-- RECIPES CONTAINER -->
+        <section class="recipe-grid" id="recipeContainer">
+            <!-- JS will inject 15+ recipe cards here -->
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+    <dialog id="recipeModal">
+
+        <h2 id="modalTitle"></h2>
+
+        <img id="modalImage" src="" alt="Recipe Image">
+
+        <p id="modalDescription"></p>
+
+        <h3>Ingredients</h3>
+        <ul id="modalIngredients"></ul>
+
+        <h3>Instructions</h3>
+        <p id="modalInstructions"></p>
+
+        <button id="closeModal">Close</button>
+
+    </dialog>
+
+    <footer>
+
+        <div>
+            <p>
+                WDD231 Project <br>
+                Uzoka Shadrack Chinedu <br>
+                &copy; <span id="currentyear"></span> Asaba Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+        <p><a href="attributions.html">Attributions</a></p>
+
+        <p><a href="https://youtube.com/" target="_blank" rel="noopener">Project Video</a></p>
+
+    </footer>
+
+    <script type="module" src="js/recipes.js"></script>
+
+</body>
+
+</html>

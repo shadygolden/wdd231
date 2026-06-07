@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Jollof Rice",
+    "category": "rice",
+    "time": "45 mins",
+    "difficulty": "Easy",
+    "image": "images/jollof.jpg",
+    "description": "A popular West African rice dish cooked in tomato sauce and spices.",
+    "ingredients": [
+      "Rice",
+      "Tomatoes",
+      "Pepper",
+      "Onions",
+      "Vegetable oil",
+      "Seasoning cubes"
+    ],
+    "instructions": "Cook tomatoes and pepper sauce, add rice, and simmer until done."
+  },
+  {
+    "id": 2,
+    "name": "Fried Rice",
+    "category": "rice",
+    "time": "40 mins",
+    "difficulty": "Medium",
+    "image": "images/friedrice.jpg",
+    "description": "Colorful rice mixed with vegetables and protein.",
+    "ingredients": [
+      "Rice",
+      "Carrots",
+      "Peas",
+      "Liver",
+      "Oil",
+      "Seasoning"
+    ],
+    "instructions": "Stir-fry vegetables, add rice and seasoning, mix well."
+  },
+  {
+    "id": 3,
+    "name": "Egusi Soup",
+    "category": "soup",
+    "time": "60 mins",
+    "difficulty": "Medium",
+    "image": "images/egusi.jpg",
+    "description": "Soup made with melon seeds and assorted meat.",
+    "ingredients": [
+      "Egusi seeds",
+      "Palm oil",
+      "Spinach",
+      "Beef",
+      "Stock fish"
+    ],
+    "instructions": "Cook melon paste in palm oil, add meat and vegetables."
+  },
+  {
+    "id": 4,
+    "name": "Ogbono Soup",
+    "category": "soup",
+    "time": "55 mins",
+    "difficulty": "Medium",
+    "image": "images/ogbono.jpg",
+    "description": "Draw soup made from wild mango seeds.",
+    "ingredients": [
+      "Ogbono seeds",
+      "Palm oil",
+      "Meat",
+      "Fish",
+      "Vegetables"
+    ],
+    "instructions": "Mix ground ogbono with oil and simmer with meat."
+  },
+  {
+    "id": 5,
+    "name": "Suya",
+    "category": "snack",
+    "time": "30 mins",
+    "difficulty": "Easy",
+    "image": "images/suya.jpg",
+    "description": "Spicy grilled meat skewers.",
+    "ingredients": [
+      "Beef",
+      "Suya spice",
+      "Onions",
+      "Vegetable oil"
+    ],
+    "instructions": "Season beef and grill over open flame."
+  },
+  {
+    "id": 6,
+    "name": "Moi Moi",
+    "category": "snack",
+    "time": "50 mins",
+    "difficulty": "Medium",
+    "image": "images/moimoi.jpg",
+    "description": "Steamed bean pudding rich in protein.",
+    "ingredients": [
+      "Beans",
+      "Pepper",
+      "Onions",
+      "Eggs",
+      "Oil"
+    ],
+    "instructions": "Blend beans, mix ingredients, and steam."
+  },
+  {
+    "id": 7,
+    "name": "Akara",
+    "category": "snack",
+    "time": "25 mins",
+    "difficulty": "Easy",
+    "image": "images/akara.jpg",
+    "description": "Deep-fried bean cakes enjoyed at breakfast.",
+    "ingredients": [
+      "Beans",
+      "Onions",
+      "Pepper",
+      "Oil"
+    ],
+    "instructions": "Blend beans and fry spoonfuls in hot oil."
+  },
+  {
+    "id": 8,
+    "name": "Banga Soup",
+    "category": "soup",
+    "time": "70 mins",
+    "difficulty": "Hard",
+    "image": "images/banga.jpg",
+    "description": "Palm nut soup popular in southern Nigeria.",
+    "ingredients": [
+      "Palm nut extract",
+      "Fish",
+      "Beef",
+      "Spices"
+    ],
+    "instructions": "Boil palm extract and add meat and spices."
+  },
+  {
+    "id": 9,
+    "name": "Pepper Soup",
+    "category": "soup",
+    "time": "35 mins",
+    "difficulty": "Easy",
+    "image": "images/peppersoup.jpg",
+    "description": "Spicy broth with meat or fish.",
+    "ingredients": [
+      "Goat meat",
+      "Pepper",
+      "Spices",
+      "Onions"
+    ],
+    "instructions": "Boil meat with spices and pepper."
+  },
+  {
+    "id": 10,
+    "name": "Amala",
+    "category": "swallow",
+    "time": "20 mins",
+    "difficulty": "Easy",
+    "image": "images/amala.jpg",
+    "description": "Smooth yam flour swallow eaten with soups.",
+    "ingredients": [
+      "Yam flour",
+      "Water"
+    ],
+    "instructions": "Mix yam flour in boiling water until smooth."
+  },
+  {
+    "id": 11,
+    "name": "Pounded Yam",
+    "category": "swallow",
+    "time": "30 mins",
+    "difficulty": "Medium",
+    "image": "images/poundedyam.jpg",
+    "description": "Soft yam dough served with soup.",
+    "ingredients": [
+      "Yam",
+      "Water"
+    ],
+    "instructions": "Boil yam and pound until smooth."
+  },
+  {
+    "id": 12,
+    "name": "Boli (Roasted Plantain)",
+    "category": "snack",
+    "time": "20 mins",
+    "difficulty": "Easy",
+    "image": "images/boli.jpg",
+    "description": "Roasted plantain served with pepper sauce.",
+    "ingredients": [
+      "Plantain",
+      "Pepper sauce"
+    ],
+    "instructions": "Roast plantain over fire and serve."
+  },
+  {
+    "id": 13,
+    "name": "Ofada Rice",
+    "category": "rice",
+    "time": "60 mins",
+    "difficulty": "Medium",
+    "image": "images/ofada.jpg",
+    "description": "Local rice served with spicy sauce.",
+    "ingredients": [
+      "Ofada rice",
+      "Pepper sauce",
+      "Meat"
+    ],
+    "instructions": "Cook rice and serve with spicy sauce."
+  },
+  {
+    "id": 14,
+    "name": "Nkwobi",
+    "category": "snack",
+    "time": "45 mins",
+    "difficulty": "Hard",
+    "image": "images/nkwobi.jpg",
+    "description": "Spicy cow foot delicacy.",
+    "ingredients": [
+      "Cow foot",
+      "Palm oil",
+      "Spices",
+      "Utazi leaves"
+    ],
+    "instructions": "Cook cow foot and mix with spicy palm oil sauce."
+  },
+  {
+    "id": 15,
+    "name": "Zobo Drink",
+    "category": "drink",
+    "time": "30 mins",
+    "difficulty": "Easy",
+    "image": "images/zobo.jpg",
+    "description": "Refreshing hibiscus drink.",
+    "ingredients": [
+      "Hibiscus leaves",
+      "Pineapple",
+      "Sugar",
+      "Ginger"
+    ],
+    "instructions": "Boil hibiscus leaves and add flavoring."
+  }
+]
